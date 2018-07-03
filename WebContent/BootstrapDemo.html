@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap 实例 - 响应式的列重置</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>响应式的列重置</h1>
+			<div class="row">
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<p>第一个div列.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<p>第二个div列.</p>
+					<p>第二个div列.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+         box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<p>第三个div列.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<p>第四个div列.</p>
+				</div>
+			</div>
+
+			<h1>偏移列</h1>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<p>为了在大屏幕显示器上使用偏移，请使用 .col-md-offset-* 类。这些类会把一个列的左外边距（margin）增加 * 列，其中 * 范围是从 1 到 11。 在下面的实例中，我们有 div class="col-md-6">../div，我们将使用 .col-md-offset-3 class 来居中这个 div。
+					</p>
+				</div>
+
+			</div>
+
+			<h1>嵌套列</h1>
+			<p>PS:为了在内容中嵌套默认的网格，请添加一个新的 .row，并在一个已有的 .col-md-* 列内添加一组 .col-md-* 列。被嵌套的行应包含一组列，这组列个数不能超过12（其实，没有要求你必须占满12列）。</p>
+			<div class="row">
+				<div class="col-md-3" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<h4>第一列</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+
+				<div class="col-md-9" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					<h4>第二列 - 分为四个盒子</h4>
+					<div class="row">
+						<div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+							<p>我是第一个盒子</p>
+						</div>
+						<div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+							<p>我是第二个盒子</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+							<p>我是第三个盒子</p>
+						</div>
+						<div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+							<p>我是第四个盒子</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<h1>列排序</h1>
+			<p>PS:Bootstrap 网格系统另一个完美的特性，就是您可以很容易地以一种顺序编写列，然后以另一种顺序显示列。 您可以很轻易地改变带有 .col-md-push-* 和 .col-md-pull-* 类的内置网格列的顺序，其中 * 范围是从 1 到 11。 在下面的实例中，我们有两列布局，左列很窄，作为侧边栏。我们将使用 .col-md-push-* 和 .col-md-pull-* 类来互换这两列的顺序。</p>
+			<div class="row">
+				<p>排序前</p>
+				<div class="col-md-4" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					我在左边
+				</div>
+				<div class="col-md-8" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+					我在右边
+				</div>
+			</div><br>
+			<div class="row">
+				<p>排序后</p>
+				<div class="col-md-4 col-md-push-8" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, 
+         inset -1px 1px 1px #444;">
+					我在左边
+				</div>
+				<div class="col-md-8 col-md-pull-4" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, 
+         inset -1px 1px 1px #444;">
+					我在右边
+				</div>
+			</div>
+		</div>
+
+		<h1 align="center">响应式表格布局</h1>
+		<div class="table-responsive">
+			<p>PS:通过把任意的 .table 包在 .table-responsive class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。</p>
+
+			<table class="table">
+				<caption>响应式表格布局</caption>
+				<thead>
+					<tr>
+						<th>产品</th>
+						<th>付款日期</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>产品1</td>
+						<td>23/11/2013</td>
+						<td>待发货</td>
+					</tr>
+					<tr>
+						<td>产品2</td>
+						<td>10/11/2013</td>
+						<td>发货中</td>
+					</tr>
+					<tr>
+						<td>产品3</td>
+						<td>20/10/2013</td>
+						<td>待确认</td>
+					</tr>
+					<tr>
+						<td>产品4</td>
+						<td>20/10/2013</td>
+						<td>已退货</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h1 align="center">垂直或基本表单</h1>
+		<form role="form">
+			<div class="form-group">
+				<label for="name">名称</label>
+				<input type="text" class="form-control" id="name" placeholder="请输入名称">
+			</div>
+			<div class="form-group">
+				<label for="inputfile">文件输入</label>
+				<input type="file" id="inputfile">
+				<p class="help-block">这里是块级帮助文本的实例。</p>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 请打勾
+				</label>
+			</div>
+			<button type="submit" class="btn btn-default">提交</button>
+		</form>
+		<h1 align="center">Bootstrap 按钮</h1>
+		<!-- 标准的按钮 -->
+		<button type="button" class="btn btn-default">默认按钮</button>
+		<!-- 提供额外的视觉效果，标识一组按钮中的原始动作 -->
+		<button type="button" class="btn btn-primary">原始按钮</button>
+		<!-- 表示一个成功的或积极的动作 -->
+		<button type="button" class="btn btn-success">成功按钮</button>
+		<!-- 信息警告消息的上下文按钮 -->
+		<button type="button" class="btn btn-info">信息按钮</button>
+		<!-- 表示应谨慎采取的动作 -->
+		<button type="button" class="btn btn-warning">警告按钮</button>
+		<!-- 表示一个危险的或潜在的负面动作 -->
+		<button type="button" class="btn btn-danger">危险按钮</button>
+		<!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+		<button type="button" class="btn btn-link">链接按钮</button>
+		<p>
+			<button type="button" class="btn btn-default btn-lg ">默认按钮</button>
+			<button type="button" class="btn btn-default btn-lg active">激活按钮</button>
+		</p>
+		<p>
+			<button type="button" class="btn btn-primary btn-lg ">原始按钮</button>
+			<button type="button" class="btn btn-primary btn-lg active">激活的原始按钮</button>
+		</p>
+	</body>
+
+</html>
